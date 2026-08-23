@@ -16,7 +16,7 @@ import { Menu, X } from "lucide-react"
     ];
 
     return <div>
-<header className=" fixed top-0 left-0 z-50 w-full bg-white/90 backdrop-blur-md" >
+<header className=" fixed top-0 left-0 z-50 w-full  bg-transparent backdrop-blur-md" >
 <nav className="mx-auto flex h-20 max-w-7xl items-center justify-between px-6 lg:px-8">
     <a href="/" className="text-2xl font-bold tracking-tight">SPHERE</a>
     <div className="hidden items-center gap-8 md:flex">
