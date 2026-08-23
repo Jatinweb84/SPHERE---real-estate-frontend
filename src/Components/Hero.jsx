@@ -119,7 +119,7 @@ const Hero = () => {
                 </button>
 
                 {openMenu === "location" && (
-                  <div className="absolute left-0 top-full z-20 mt-3 w-full min-w-[180px] overflow-hidden rounded-xl border border-gray-200 bg-white p-2 shadow-xl">
+                  <div className="absolute left-0 top-full z-20 mt-3 w-full min-w-45 overflow-hidden rounded-xl border border-gray-200 bg-white p-2 shadow-xl">
                     {locations.map((item) => (
                       <button
                         key={item}
@@ -158,7 +158,7 @@ const Hero = () => {
                 </button>
 
                 {openMenu === "property" && (
-                  <div className="absolute left-0 top-full z-20 mt-3 w-full min-w-[180px] overflow-hidden rounded-xl border border-gray-200 bg-white p-2 shadow-xl">
+                  <div className="absolute left-0 top-full z-20 mt-3 w-full min-w-45 overflow-hidden rounded-xl border border-gray-200 bg-white p-2 shadow-xl">
                     {propertyTypes.map((item) => (
                       <button
                         key={item}
@@ -197,7 +197,7 @@ const Hero = () => {
                 </button>
 
                 {openMenu === "price" && (
-                  <div className="absolute left-0 top-full z-20 mt-3 w-full min-w-[200px] overflow-hidden rounded-xl border border-gray-200 bg-white p-2 shadow-xl">
+                  <div className="absolute left-0 top-full z-20 mt-3 w-full min-w-50 overflow-hidden rounded-xl border border-gray-200 bg-white p-2 shadow-xl">
                     {prices.map((item) => (
                       <button
                         key={item}
