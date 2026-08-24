@@ -5,6 +5,8 @@ import { Routes, Route } from "react-router";
 import SmoothScroll from "./Components/SmoothScroll";
 import PropertyCategories from "./Components/PropertyCategory";
 import WhyChooseSphere from "./Components/WhyChooseSphere";
+import HowItWorks from "./Components/HowItWorks";
+
 function App() {
   return (
     <>
@@ -18,6 +20,7 @@ function App() {
       </main>
       <PropertyCategories />
       <WhyChooseSphere />
+      <HowItWorks />
     </>
   );
 }
