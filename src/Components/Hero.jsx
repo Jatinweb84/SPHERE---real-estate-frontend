@@ -12,13 +12,7 @@ const Hero = () => {
 
   const locations = ["Indore", "Bhopal", "Jabalpur", "Mumbai", "Delhi"];
 
-  const propertyTypes = [
-    "Apartment",
-    "Villa",
-    "House",
-    "Plot",
-    "Commercial",
-  ];
+  const propertyTypes = ["Apartment", "Villa", "House", "Plot", "Commercial"];
 
   const prices = [
     "Under ₹50 Lakh",
@@ -33,7 +27,7 @@ const Hero = () => {
     const selectedPrice = price || "Any price";
 
     setSearchMessage(
-      `Searching ${listingType.toLowerCase()} properties in ${selectedLocation} • ${selectedProperty} • ${selectedPrice}`
+      `Searching ${listingType.toLowerCase()} properties in ${selectedLocation} • ${selectedProperty} • ${selectedPrice}`,
     );
   };
 
@@ -42,14 +36,14 @@ const Hero = () => {
   };
 
   return (
-
-    <section className="object-cover top-0 bg-cover bg-center" style={{
-    backgroundImage:
-      "url('https://images.unsplash.com/photo-1558442074-3c19857bc1dc?q=80&w=1031&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')",
-  }}
+    <section
+      className="object-cover top-0 bg-cover bg-center"
+      style={{
+        backgroundImage:
+          "url('https://images.unsplash.com/photo-1558442074-3c19857bc1dc?q=80&w=1031&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')",
+      }}
     >
       <div className="mx-auto grid min-h-[calc(100vh-80px)] max-w-7xl items-center gap-12 px-6 py-16 lg:grid-cols-2 lg:px-8 lg:py-20">
-
         {/* Left Content */}
         <div className="max-w-2xl">
           <p className="mb-5 text-sm font-semibold uppercase tracking-[0.25em] text-black">
@@ -61,13 +55,12 @@ const Hero = () => {
           </h1>
 
           <p className="mt-6 max-w-xl text-base leading-7 text-amber-800 sm:text-lg">
-            Discover exceptional homes, apartments, and properties in the
-            places you want to live.
+            Discover exceptional homes, apartments, and properties in the places
+            you want to live.
           </p>
 
           {/* Search Box */}
           <div className="mt-10 overflow-visible rounded-2xl border border-white bg-white shadow-xl shadow-gray-200/40">
-
             {/* Buy / Rent */}
             <div className="flex border-b border-gray-100">
               <button
@@ -95,7 +88,6 @@ const Hero = () => {
 
             {/* Search Fields */}
             <div className="grid gap-4 p-4 sm:grid-cols-2 lg:grid-cols-[1.2fr_1fr_1fr_auto] lg:items-end">
-
               {/* Location */}
               <div className="relative">
                 <label className="mb-2 block text-xs font-semibold uppercase tracking-wide text-white">
@@ -108,14 +100,9 @@ const Hero = () => {
                 >
                   <MapPin size={18} strokeWidth={1.8} />
 
-                  <span>
-                    {location || "Choose location"}
-                  </span>
+                  <span>{location || "Choose location"}</span>
 
-                  <ChevronDown
-                    size={17}
-                    className="ml-auto"
-                  />
+                  <ChevronDown size={17} className="ml-auto" />
                 </button>
 
                 {openMenu === "location" && (
@@ -131,9 +118,7 @@ const Hero = () => {
                       >
                         {item}
 
-                        {location === item && (
-                          <Check size={16} />
-                        )}
+                        {location === item && <Check size={16} />}
                       </button>
                     ))}
                   </div>
@@ -150,9 +135,7 @@ const Hero = () => {
                   onClick={() => toggleMenu("property")}
                   className="flex w-full items-center justify-between text-left text-sm font-medium text-gray-800"
                 >
-                  <span>
-                    {propertyType || "Any type"}
-                  </span>
+                  <span>{propertyType || "Any type"}</span>
 
                   <ChevronDown size={17} />
                 </button>
@@ -170,9 +153,7 @@ const Hero = () => {
                       >
                         {item}
 
-                        {propertyType === item && (
-                          <Check size={16} />
-                        )}
+                        {propertyType === item && <Check size={16} />}
                       </button>
                     ))}
                   </div>
@@ -189,9 +170,7 @@ const Hero = () => {
                   onClick={() => toggleMenu("price")}
                   className="flex w-full items-center justify-between text-left text-sm font-medium text-gray-800"
                 >
-                  <span>
-                    {price || "Any price"}
-                  </span>
+                  <span>{price || "Any price"}</span>
 
                   <ChevronDown size={17} />
                 </button>
@@ -209,9 +188,7 @@ const Hero = () => {
                       >
                         {item}
 
-                        {price === item && (
-                          <Check size={16} />
-                        )}
+                        {price === item && <Check size={16} />}
                       </button>
                     ))}
                   </div>
@@ -236,12 +213,8 @@ const Hero = () => {
             )}
           </div>
         </div>
-
-      </div> 
+      </div>
     </section>
-    
-    
-    
   );
 };
 
