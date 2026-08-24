@@ -4,6 +4,8 @@ import Navbar from "./Components/Navbar";
 import Home from "./Pages/Home";
 import { Routes, Route } from "react-router";
 import SmoothScroll from "./Components/SmoothScroll";
+import PropertyCategories from "./Components/PropertyCategory";
+
 function App() {
   return (
     <>
@@ -15,6 +17,7 @@ function App() {
           <Route path="/" element={<Home />}></Route>
         </Routes>
       </main>
+      <PropertyCategories />
     </>
   );
 }

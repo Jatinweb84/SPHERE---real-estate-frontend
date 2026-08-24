@@ -7,7 +7,7 @@ const PropertyCard = ({ property }) => {
   return (
     <article className="group min-w-0 overflow-hidden rounded-2xl border border-gray-200 bg-white">
       {/* Image */}
-      <div className="relative aspect-[4/3] overflow-hidden">
+      <div className="relative aspect-4/3 overflow-hidden">
         <img
           src={property.image}
           alt={property.title}
@@ -15,7 +15,7 @@ const PropertyCard = ({ property }) => {
         />
 
         {/* Gradient */}
-        <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent opacity-60" />
+        <div className="absolute inset-0 bg-linear-to-t from-black/30 to-transparent opacity-60" />
 
         {/* Type */}
         <span className="absolute left-4 top-4 rounded-full bg-white/90 px-3 py-1.5 text-xs font-semibold backdrop-blur-sm">
