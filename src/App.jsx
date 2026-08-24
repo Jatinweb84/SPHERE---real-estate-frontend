@@ -1,11 +1,10 @@
-import { useState } from "react";
 import React from "react";
 import Navbar from "./Components/Navbar";
 import Home from "./Pages/Home";
 import { Routes, Route } from "react-router";
 import SmoothScroll from "./Components/SmoothScroll";
 import PropertyCategories from "./Components/PropertyCategory";
-
+import WhyChooseSphere from "./Components/WhyChooseSphere";
 function App() {
   return (
     <>
@@ -18,6 +17,7 @@ function App() {
         </Routes>
       </main>
       <PropertyCategories />
+      <WhyChooseSphere />
     </>
   );
 }
