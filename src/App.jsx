@@ -6,6 +6,7 @@ import SmoothScroll from "./Components/SmoothScroll";
 import PropertyCategories from "./Components/PropertyCategory";
 import WhyChooseSphere from "./Components/WhyChooseSphere";
 import HowItWorks from "./Components/HowItWorks";
+import TestimonialSection from "./Components/TestimonialSection";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
       <PropertyCategories />
       <WhyChooseSphere />
       <HowItWorks />
+      <TestimonialSection />
     </>
   );
 }
