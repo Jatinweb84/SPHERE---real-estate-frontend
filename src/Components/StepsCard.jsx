@@ -1,4 +1,4 @@
-const StepCard = ({ step }) => {
+const StepsCard = ({ step }) => {
   return (
     <article className="border-t border-white/30 pt-6">
       <span className="text-sm font-medium text-white/60">{step.number}</span>
@@ -10,4 +10,4 @@ const StepCard = ({ step }) => {
   );
 };
 
-export default StepCard;
+export default StepsCard;

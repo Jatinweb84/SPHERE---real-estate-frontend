@@ -7,6 +7,7 @@ import PropertyCategories from "./Components/PropertyCategory";
 import WhyChooseSphere from "./Components/WhyChooseSphere";
 import HowItWorks from "./Components/HowItWorks";
 import TestimonialSection from "./Components/TestimonialSection";
+import CTA from "./Components/CTA";
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
       <WhyChooseSphere />
       <HowItWorks />
       <TestimonialSection />
+      <CTA />
     </>
   );
 }
