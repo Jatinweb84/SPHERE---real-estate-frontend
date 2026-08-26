@@ -8,6 +8,7 @@ import WhyChooseSphere from "./Components/WhyChooseSphere";
 import HowItWorks from "./Components/HowItWorks";
 import TestimonialSection from "./Components/TestimonialSection";
 import CTA from "./Components/CTA";
+import Footer from "./Components/Footer";
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
       <HowItWorks />
       <TestimonialSection />
       <CTA />
+      <Footer />
     </>
   );
 }
