@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Star, Quote } from "lucide-react";
 import TestimonialCard from "./TestimonialCard";
-import { testimonials } from "../Data/testimonials";
+import { testimonials } from "../data/testimonials";
 
 const TestimonialSection = () => {
   const [activeIndex, setActiveIndex] = useState(0);

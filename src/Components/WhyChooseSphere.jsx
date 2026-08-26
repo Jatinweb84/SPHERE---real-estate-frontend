@@ -1,5 +1,5 @@
 import BenefitCard from "./BenefitCard";
-import benefits from "../Data/benefits";
+import benefits from "../data/benefits";
 
 const WhyChooseSphere = () => {
   return (
